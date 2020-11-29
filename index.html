@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar-logo">
+            <h2>Sample Task</h2>
+        </div>
+        <!-- <a class="icon" onclick="mybuger()"><i class="fa fa-bars"></i></a> -->
+        <ul class="navbar-list" id="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger"> 
+            <div id="burger-respon"> 
+                <div class="l"></div>
+                <div class="l"></div>
+                <div class="l"></div>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="container">
+        <h1>Hello Word</h1>
+        <div>
+            <form action=""></form>
+        </div>
+    </div> -->
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $(".burger").click(function(){
+            $("#list").slideToggle();
+        })
+    })
+    
+        
+    // window.scroll = function() {scrollFunction()};
+    // function scrollFunction(){
+    //     if ( document.body.scrollTop > 100){
+    //         console.log("hey");
+    //         document.getElementById("navbar-head").addClass("shrinking");
+    //     }else{
+    //         document.getElementById("navbar-head").removeClass("shrinking");
+    //     }
+    // }
+        // window.addEventListener("scroll", function(){
+        //     var header = document.querySelector(".navbar-head");
+
+        //     header.classList.toggle("sticky", window.scrollY > 0);
+        //     console.log("hey");
+        // })
+</script>
+</html>
