@@ -35,17 +35,49 @@ nav{
 .burger{
     display: none;
 }
-@media only screen and (max-width: 1190px){
+@media only screen and (max-width: 1125px){
     .navbar-list{
-        width: 50%;
+        width: 40%;
+        display: flex;
     }
 }
+/* @media only screen and (max-width: 891px){
+    .navbar-list{
+        width: 40%;
+        display: flex;
+    }
+} */
 @media only screen and (max-width: 890px){
-    body{
-        overflow-y: hidden;
+    .burger{
+        display: block;
     }
-    .navbar-list {
-        
+    .navbar-list{
+        display: block;
+        position: absolute;
+        top:0;
+        background-color: whitesmoke;
+        margin-top:49px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        z-index: -1;
+        transform:  translateY(-100%);
+        transition: .4s;
     }
 }
-
+/* @media only screen and (max-width: 800px){
+    .navbar-list{
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+        list-style: none;
+        width: 100%;
+        padding:0px;
+    }
+    .burger{
+        display: block;
+    }
+} */
+.addCla{
+    transform:  translateY(0%);
+}
